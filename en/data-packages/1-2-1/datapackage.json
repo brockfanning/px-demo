@@ -12,8 +12,48 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Proportion of population living below the national poverty line",
+                ""
+              ]
+            },
+            "title": "measure"
+          },
+          {
+            "name": "sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total (sex)",
+                "Males",
+                "Females",
+                ""
+              ]
+            },
+            "title": "sex"
+          },
+          {
+            "name": "age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total (age)",
+                "00-17 years",
+                "18-24 years",
+                "25-54 years",
+                "55-66 years",
+                "67+ years",
+                ""
+              ]
+            },
+            "title": "age"
           },
           {
             "name": "Value",
@@ -26,5 +66,5 @@
   ],
   "profile": "data-package",
   "name": "1-2-1",
-  "title": "Proportion of population living below the national poverty line, by sex and age"
+  "title": "1-2-1"
 }
